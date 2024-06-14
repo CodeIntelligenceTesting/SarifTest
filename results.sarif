@@ -9,9 +9,7 @@
           "rules": [
             {
               "id": "heap_buffer_overflow",
-              "name": {
-                "text": "Heap Buffer Overflow"
-              },
+              "name": "Heap Buffer Overflow",
               "shortDescription": {
                 "text": "Heap Buffer Overflow"
               },
@@ -34,9 +32,7 @@
             },
             {
               "id": "shift_exponent",
-              "name": {
-                "text": "Invalid Shift"
-              },
+              "name": "Invalid Shift",
               "shortDescription": {
                 "text": "Invalid Shift"
               },
@@ -51,9 +47,9 @@
                 "kind": "",
                 "name": "",
                 "problem": {
-                  "severity": "recommendation"
+                  "severity": "warning"
                 },
-                "problem.severity": "recommendation",
+                "problem.severity": "warning",
                 "security-severity": "2.0"
               }
             }
