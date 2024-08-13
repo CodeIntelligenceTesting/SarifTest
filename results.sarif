@@ -37,7 +37,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "Heap Buffer Overflow found in line 18, column 11\n \nCrashing input (base64): RlVaWklORwD/29tb3dvb\n \nStack trace:\n1: exploreMe   (src/explore_me.cpp:18:11)\n2: LLVMFuzzerTestOneInputNoReturn   (cifuzz-spark/fuzz_exploreMe.cpp:19:3)\n"
+            "text": "Heap Buffer Overflow \"philosophical_panther\" found in src/explore_me.cpp:18:11\n \nCrashing input (base64): RlVaWklORwD/29tb3dvb\n \nStack trace:\n1: exploreMe   (src/explore_me.cpp:18:11)\n2: LLVMFuzzerTestOneInputNoReturn   (cifuzz-spark/fuzz_exploreMe.cpp:19:3)\n"
           },
           "locations": [
             {
@@ -61,4 +61,4 @@
       ]
     }
   ]
-} 
+}
