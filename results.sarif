@@ -29,29 +29,6 @@
                 "problem.severity": "error",
                 "security-severity": "9.0"
               }
-            },
-            {
-              "id": "shift_exponent",
-              "name": "Invalid Shift",
-              "shortDescription": {
-                "text": "Invalid Shift"
-              },
-              "fullDescription": {
-                "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
-              },
-              "help": {
-                "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative.\n\nMake sure the shift operation does not exceed the size of its target or causes an overflow"
-              },
-              "properties": {
-                "id": "",
-                "kind": "",
-                "name": "",
-                "problem": {
-                  "severity": "warning"
-                },
-                "problem.severity": "warning",
-                "security-severity": "2.0"
-              }
             }
           ]
         }
@@ -60,55 +37,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "Heap Buffer Overflow found in line 18, column 11"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/explore_me2.cpp"
-                },
-                "region": {
-                  "startLine": 18,
-                  "endLine": 18,
-                  "startColumn": 11,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dangerous_peafowl"
-          }
-        },
-        {
-          "ruleId": "shift_exponent",
-          "message": {
-            "text": "Invalid Shift found in line 13, column 11"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/explore_me2.cpp"
-                },
-                "region": {
-                  "startLine": 13,
-                  "endLine": 13,
-                  "startColumn": 11,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "elegant_polecat"
-          }
-        },
-        {
-          "ruleId": "heap_buffer_overflow",
-          "message": {
-            "text": "Heap Buffer Overflow found in line 18, column 11"
+            "text": "Heap Buffer Overflow found in line 18, column 11\n\nCrashing input (base64): RlVaWklORwD/29tb3dvb\n\nStack trace:\n1: exploreMe   (src/explore_me.cpp:18:11)\n2: LLVMFuzzerTestOneInputNoReturn   (cifuzz-spark/fuzz_exploreMe.cpp:19:3)\n"
           },
           "locations": [
             {
@@ -126,34 +55,10 @@
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "zealous_shark"
-          }
-        },
-        {
-          "ruleId": "shift_exponent",
-          "message": {
-            "text": "Invalid Shift found in line 13, column 11"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/explore_me.cpp"
-                },
-                "region": {
-                  "startLine": 13,
-                  "endLine": 13,
-                  "startColumn": 11,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "odd_starfish"
+            "primaryLocationLineHash": "philosophical_panther"
           }
         }
       ]
     }
   ]
-}
+} 
