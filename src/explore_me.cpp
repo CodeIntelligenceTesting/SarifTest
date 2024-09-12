@@ -14,7 +14,7 @@ void exploreMe(int a, int b, string c) {
 
         if (c == "FUZZING") {
           // Trigger a heap buffer overflow
-          char *s = (char *)malloc(1);
+          char *s = (char *)malloc(20);
           strcpy(s, "too long");
           printf("%s\n", s);
         }
